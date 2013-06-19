@@ -1,0 +1,101 @@
+{
+  "load": [
+    "app/packages/underscore/underscore.js",
+    "app/packages/meteor/server_environment.js",
+    "app/packages/meteor/helpers.js",
+    "app/packages/meteor/timers.js",
+    "app/packages/meteor/fiber_helpers.js",
+    "app/packages/meteor/dynamics_nodejs.js",
+    "app/packages/meteor/url_server.js",
+    "app/packages/meteor/url_common.js",
+    "app/packages/deps/deps.js",
+    "app/packages/logging/logging.js",
+    "app/packages/random/random.js",
+    "app/packages/json/json2.js",
+    "app/packages/routepolicy/routepolicy.js",
+    "app/packages/stream/stream_server.js",
+    "app/packages/ejson/ejson.js",
+    "app/packages/ejson/base64.js",
+    "app/packages/ordered-dict/ordered_dict.js",
+    "app/packages/minimongo/minimongo.js",
+    "app/packages/minimongo/selector.js",
+    "app/packages/minimongo/modify.js",
+    "app/packages/minimongo/diff.js",
+    "app/packages/minimongo/objectid.js",
+    "app/packages/livedata/writefence.js",
+    "app/packages/livedata/crossbar.js",
+    "app/packages/livedata/livedata_common.js",
+    "app/packages/livedata/livedata_server.js",
+    "app/packages/livedata/server_convenience.js",
+    "app/packages/mongo-livedata/mongo_driver.js",
+    "app/packages/mongo-livedata/local_collection_driver.js",
+    "app/packages/mongo-livedata/remote_collection_driver.js",
+    "app/packages/mongo-livedata/collection.js",
+    "app/packages/startup/startup_server.js",
+    "app/packages/past/past.js",
+    "app/packages/autopublish/autopublish.js",
+    "app/packages/insecure/insecure.js",
+    "app/friday.js"
+  ],
+  "manifest": [
+    {
+      "path": "static_cacheable/32298e65b009b24117953cf9770b3c80cf00e4a3.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/32298e65b009b24117953cf9770b3c80cf00e4a3.js",
+      "size": 274542,
+      "hash": "32298e65b009b24117953cf9770b3c80cf00e4a3"
+    },
+    {
+      "path": "static_cacheable/a148a5a7c307f25d550c75178d8ae5ccec2ef384.css",
+      "where": "client",
+      "type": "css",
+      "cacheable": true,
+      "url": "/a148a5a7c307f25d550c75178d8ae5ccec2ef384.css",
+      "size": 1730,
+      "hash": "a148a5a7c307f25d550c75178d8ae5ccec2ef384"
+    },
+    {
+      "path": "static/crust.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/crust.png",
+      "size": 1088,
+      "hash": "4142e1d9f5b08323d1cbf0b68b4fd4f066c55387"
+    },
+    {
+      "path": "static/eggplant.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/eggplant.png",
+      "size": 3121,
+      "hash": "f618160fd7634ccd66054c347c0e270216320e1f"
+    },
+    {
+      "path": "static/eggplants.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/eggplants.png",
+      "size": 1842,
+      "hash": "220e75138c6b6a51e564126e60ac3218e2286d10"
+    },
+    {
+      "path": "static/small_eggplant.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/small_eggplant.png",
+      "size": 4555,
+      "hash": "8858d42185d361a56ef18a9b31ecacd2852a1c8f"
+    },
+    {
+      "path": "app.html",
+      "where": "internal",
+      "hash": "4d4c227a6731836ef12d5796a60da23e1385154f"
+    }
+  ]
+}

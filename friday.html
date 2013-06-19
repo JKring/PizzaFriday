@@ -1,0 +1,76 @@
+<head>
+  <title>Pizza Friday</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="title" content="Pizza Friday">
+	<meta name="description" content="Not for the faint of heart.">
+  <meta name="author" content="Jake Kring">
+  <link href='http://fonts.googleapis.com/css?family=Inder|Caesar+Dressing' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  <div class='container'>
+    <h1>Pizza Friday</h1>
+    {{> friday }}
+  </div>
+</body>
+
+<template name="friday">
+
+  {{#if filteringByIngredients}}
+  <div class='ingredients filter'>
+    Filtered by
+    {{#each selectedIngredients}}
+      {{> selectedIngredient}}
+    {{/each}}
+  </div>
+  {{/if}}
+
+  {{#each pizzas}}
+    {{> pizza}}
+  {{/each}}
+
+</template>
+
+<template name="pizza">
+  <div class='post'>
+    <div class='pizza' style="{{ style }}">
+      <div class='details-box'>
+        {{#if showAvg}}
+        <p>Averaged <strong>{{ prettyReviewAvg }}</strong></p>
+        <div class="avg" style="width:{{ eggplantsWidth }}"> &nbsp; </div>
+        <p>{{ prettyReviewCount }}</p>
+        {{else}}
+        <p>No Reviews Yet</p>
+        {{/if}}
+      </div>
+    </div>
+    {{> scorer}}
+    <div class='clear'></div>
+    <div class='ingredients'>
+      {{#each ingredients}}
+        {{> ingredient}}
+      {{/each}}
+    </div>
+  </div>
+</template>
+
+<template name="scorer">
+  <div class='eggplants'>
+  <h3>Your Review</h3>
+  {{#each eggplants}}
+    {{> eggplant}}
+  {{/each}}
+  </div>
+</template>
+
+<template name="eggplant">
+  <span class="{{ active }}">&nbsp;</span>
+</template>
+
+<template name="ingredient">
+  <span>{{ this }}</span>
+</template>
+
+<template name="selectedIngredient">
+  <span>{{ this }} ×</span>
+</template>
